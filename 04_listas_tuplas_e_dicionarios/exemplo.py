@@ -11,9 +11,6 @@ print(nomes)
 #2. acessando elementos da lista
 print(nomes[0])
 
-
-
-
 #podemos acessar o ultimo elemento usando 0 -1
 print(nomes[-1])
 
@@ -109,3 +106,44 @@ aluno = {
    "nota": 8.5
 }
 print(aluno)
+
+# 13. acesssando valores do dicionario
+
+print(aluno["nome"])
+print(aluno["idade"])
+print(aluno["nota"])
+
+# 14. alterando valores
+
+aluno["nota"] = 9.0
+print(aluno)
+
+# 15. adicionando novos dados
+
+aluno ["curso"] = "informatica"
+print(aluno)
+
+#16. removendo dados
+
+del aluno["curso"]
+print(aluno)
+
+#17. percorrendo um dicionario
+
+for chave in aluno:
+   print(chave)
+
+#podemos acessar chave e valor ao mesmo tempo.
+for chave in aluno.items():
+   print(f"{chave} : {valor}")
+
+#18.   verificando uma chave
+if "nome" in aluno:
+   print("a chave nome existe.")
+
+#19. dicionario com lista
+
+aluno = {
+   "nome": "maria",
+    "notas": [8,0 , 7.5 , 9.0]
+}
