@@ -24,6 +24,7 @@ class Funcionario:
 
 ##########################################
 ana = Funcionario("ana", 3000)
+ana.dar_aumento(100)
 #ana.salario = 4000
 print(ana.salario)
 ana.apresentar()
@@ -31,10 +32,9 @@ ana.dar_aumento(-20)
 ana.apresentar()
 
 #o try/except é um bloco usado em programacao para tratar um erro
-
 try:
     ana.salario = 10000
-except attributeError:
+except AttributeError:
     print("não é permitido alterar o salario diretamente.")
 
 try:
